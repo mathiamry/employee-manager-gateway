@@ -1,0 +1,17 @@
+
+entity Department {
+	name String,
+    address String
+}
+
+entity Employee {
+	firstName String,
+    lastName String,
+    dateOfHiring Instant,
+    salary Float
+    
+}
+
+relationship ManyToOne {
+	Employee{department} to Department,
+}
